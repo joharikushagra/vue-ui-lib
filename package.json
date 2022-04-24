@@ -1,16 +1,6 @@
 {
   "name": "@kushagra/vue3-lib",
-  "version": "0.0.1",
   "description": "",
-  "main": "dist/library.js",
-  "module": "dist/library.mjs",
-  "files": [
-    "dist/*"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,9 +8,21 @@
     "vue": "^3.2.21"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.2.33",
-    "rollup": "^2.70.2",
+    "rollup": "^2.60.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0"
-  }
+    "rollup-plugin-vue": "^6.0.0",
+    "vuepress": "^2.0.0-beta.27"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "version": "0.0.7",
+  "main": "dist/library.js",
+  "module": "dist/library.mjs",
+  "files": [
+    "dist/*"
+  ]
 }
