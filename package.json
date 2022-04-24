@@ -1,11 +1,11 @@
 {
-  "name": "@kushagra/vue3-lib",
+  "name": "vue-3-comp-test",
   "description": "",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "peerDependencies": {
-    "vue": "^3.2.21"
+    "vue": "^2"
   },
   "devDependencies": {
     "rollup": "^2.60.2",
@@ -19,7 +19,7 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
-  "version": "0.0.7",
+  "version": "0.0.1",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
